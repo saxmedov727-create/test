@@ -73,7 +73,7 @@ if turi == "humo" or turi == "uzcard":
                     if ayir > hisob:
                         print("Hisobingizda mablag‘ yetarli emas!")
                     else:
-                        tasdiq = input(f"{ayir} so‘m yechilsinmi? (ha/yo‘q): ").lower()
+                        tasdiq = input(f"{ayir} so‘m yechilsinmi? (ha/yo‘q): ").lower().strip()
                         if tasdiq == "ha":
                             hisob -= ayir
                             print(f"{ayir} so‘m yechildi. Hisobingizda {hisob} so‘m qoldi.")
